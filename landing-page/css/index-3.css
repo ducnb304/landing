@@ -1,0 +1,76 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));;
+	grid-row-gap: 2rem;
+	grid-column-gap: 2rem;
+	margin: 2rem 0 2rem 0;
+grid-column-start: 1;
+grid-column-end: 3;
+}
+
+.card:hover {
+	-webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,75);
+	-moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,75);
+	box-shadow: -1px 9px 40px -12px rgba(0,0,0,75); 
+}
+}
+/*----- Tabs -----*/
+.tabs {
+	width:100%;
+	display:inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+	.tab-links:after {
+	display:block;
+	clear:both;
+	content:'';
+}
+
+.tab-links li {
+	margin:0px 5px;
+	float:left;
+	list-style:none;
+}
+
+.tab-links a {
+	padding:9px 15px;
+	display:inline-block;
+	border-radius:3px 3px 0px 0px;
+	background:#7FB5DA;
+	font-size:16px;
+	font-weight:600;
+	color:#4c4c4c;
+	transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+	background:#a7cce5;
+	text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+	background:#fff;
+	color:#4c4c4c;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+	padding:15px;
+	border-radius:3px;
+	box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+	background:#fff;
+}
+
+.tab {
+	display:none;
+}
+
+.tab.active {
+	display:block;
+}
+
+body {
+	background-color: #33CCCC;
+}

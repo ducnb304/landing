@@ -1,0 +1,224 @@
+
+body{
+	font-family: 'Open San;s', sans-serif;
+	background-color: #f4f6f8;
+
+}
+.carousel-item>img {
+	max-height: 560px;
+}
+
+.carousel-inner h5 {
+	font-size: 30px;
+	color: #000;
+}
+
+.lul {
+	justify-self: center;
+	width: 70%;
+	align-self: end;
+	margin-bottom: 20px;
+	color: #fff;
+	
+}
+
+.chipset {
+	background-image: url("chip.jpeg");
+	background-position: center;
+	width: 100%;
+	height: 500px;
+	display: grid;
+}
+
+#h4-performance {
+	text-align: center;
+	font-size: 30px;
+}
+
+.design {
+	display: grid;
+	height: 600px;
+	width: 100%;
+	background-position: center;
+	background-image: url("img/thietke.jpg");
+	color: yellow;
+	font-size: 30px;
+
+}
+
+
+.details {
+	text-align: center;
+}
+
+.chipset {
+	display: grid;
+	height: 600px;
+	width: 100%;
+	background-position: center;
+	background-image: url("img/chipset.png");
+	color: yellow;
+	font-size: 30px;
+}
+
+
+/*.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	grid-row-gap: 2rem;
+	grid-column-gap: 2rem;
+	margin: 2rem 0 2rem 0;
+	color: white;
+}
+*/
+.section_3 {
+	background-color: #444444;
+}
+
+.list-unstyled  {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+	background: #B5B5B5;
+	opacity: 0.5;
+
+}
+img {
+	overflow:hidden;
+}
+.card:hover {
+	-webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,75);
+	-moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,75);
+	box-shadow: -1px 9px 40px -12px rgba(0,0,0,75); 
+	background-color: #FF99FF;
+	
+}
+
+
+.abc{
+	border-right: 1px solid black	;
+	padding-right: 5px;
+}
+
+.footer-container{
+	font-size: 0.7rem;
+	background-color: #444444;
+}
+ hr{
+	color: black;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid white;
+}
+
+.about-apple {
+	color: #fff;
+}
+.footer-container a{
+	color: white;
+}
+.footer-container h3{
+	color: white;
+}
+.sec2 p{
+	color: white;
+}
+
+.card-title {
+	color: #000;
+}
+
+.card-text {
+	color:#000;
+}
+
+.card-subtitle p{
+	color: #000;
+}
+
+.ip-banner {
+	background-image: url("img/banner/banner.png") ;
+	width: 100%;
+	height: 400px;
+	background-position: center;
+	line-height: 30px;
+}
+
+.ip-details {
+	justify-self: center;
+	width: 70%;
+	align-self: end;
+	margin-bottom: 50px;
+	color: #fff;
+	text-align: center;
+	margin: 100px 0px 0px 20px;
+	font-size: 30px;
+
+}
+
+.danhmuc {
+	margin-top: 10px;
+	background-image: url("img/ip-bg.jpg");
+	border-radius: 12px;
+}
+
+/*----- Tabs -----*/
+.tabs {
+	width:100%;
+	display:inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+	.tab-links:after {
+	display:block;
+	clear:both;
+	content:'';
+}
+
+.tab-links li {
+	margin:0px 5px;
+	float:left;
+	list-style:none;
+}
+
+.tab-links a {
+	padding:9px 15px;
+	display:inline-block;
+	border-radius:3px 3px 0px 0px;
+	background:#7FB5DA;
+	font-size:16px;
+	font-weight:600;
+	color:#4c4c4c;
+	transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+	background:#a7cce5;
+	text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+	background:#66CCCC;
+	color:#4c4c4c;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+	padding:15px;
+	border-radius:3px;
+	box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+	background:	#fff;
+}
+
+.tab {
+	display:none;
+}
+
+.tab.active {
+	display:block;
+}
+

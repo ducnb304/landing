@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Card Hover Effect</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index-3.css">
+        <link rel="stylesheet" href="css/custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Tab #1</a></li>
+        <li><a href="#tab2">Tab #2</a></li>
+        <li><a href="#tab3">Tab #3</a></li>
+        <li><a href="#tab4">Tab #4</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <div class="row">
+            <div class="col-6-lg ml-4">
+                <!-- Bootstrap Card -->
+                <div class="card border-primary" style="width:18rem;">
+                    <img width="180"; height="180" src="img/ip.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone X 128GB</h5>
+                         <h6 class="card-subtitle mb-2 text-muted">12.000.000</h6>
+                        <p class="card-text">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                        </p>
+                        <a href="#" class="btn btn-primary">Đặt hàng ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6-lg ml-4">
+                <div class="card border border-primary" style="width:18rem;">
+                    <img width="180"; height="180" src="img/ip.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">12.000.000</h6>
+                        <p class="card-text">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                        </p>
+                        <a href="#" class="btn btn-primary">Read...</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6-lg ml-4">
+                <div class="card border-primary" style="width: 18rem;">
+                    <img width="180"; height="180" src="test.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Features</h5>
+                        <h5 class="card-subtitle mb-2 text-danger">12.000.000</h5>  
+                        <p class=" card-text" style="color: #000;">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                        </p>
+                        <a href="#" class=" col-lg-6 btn btn-primary">Read...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="tab2" class="tab">
+            <p>Tab #2 content goes here!</p>
+            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+        </div>
+
+        <div id="tab3" class="tab">
+            <p>Tab #3 content goes here!</p>
+            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
+        </div>
+
+        <div id="tab4" class="tab">
+            <p>Tab #4 content goes here!</p>
+            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script>
+    jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e) {
+        var currentAttrValue = jQuery(this).attr('href');
+
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).fadeIn(400).siblings().hide();
+
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+        e.preventDefault();
+    });
+});
+</script>
+</body>
+</html>
